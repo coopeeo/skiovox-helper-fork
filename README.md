@@ -19,3 +19,12 @@ Once installed, open a new tab to see the extension's homepage.
 ![image](https://github.com/zkayns/skiovox-helper/assets/80561998/4c09893a-65a5-45da-b70b-5f3d20c27d54)
 
 If you need to install extensions with chromewebstore.google.com blocked, try [Skebstore.](https://github.com/bypassiwastaken/skebstore)
+
+## Building
+
+use `npm i`
+<br>
+
+then use `npm run build`
+
+then load unpacked and use the dist folder

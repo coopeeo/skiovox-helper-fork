@@ -1,9 +1,10 @@
-import { DragController } from "./drag-controller.js";
-import { FullscreenController } from "./fullscreen-controller.js";
-import { BatteryDisplay } from "./battery-display.js";
-import { DateDisplay } from "./date-display.js";
-import { TimeDisplay } from "./time-display.js";
-import { BackgroundController } from "./background-controller.js";
+import { DragController } from "./drag-controller.ts";
+import { FullscreenController } from "./fullscreen-controller.ts";
+import { BatteryDisplay } from "./battery-display.ts";
+import { DateDisplay } from "./date-display.ts";
+import { TimeDisplay } from "./time-display.ts";
+import { BackgroundController } from "./background-controller.ts";
+import { Settings } from "./settings.ts";
 
 const WIFI_URL = "chrome://network/#select";
 const BLUETOOTH_URL = "chrome://bluetooth-pairing";
@@ -14,6 +15,7 @@ const HELP_URL = "https://github.com/bypassiwastaken/skiovox-helper";
 const WEBSTORE_URL = "https://chromewebstore.google.com";
 const ADDSESSION_URL = "https://accounts.google.com/signin/v2/identifier?hl=en&continue=https%3A%2F%2Fwww.google.com%2F&ec=GAlAmgQ&flowName=GlifWebSignIn&flowEntry=AddSession";
 
+//var elements = [];
 let [
     help,
     webStore,
@@ -27,7 +29,8 @@ let [
     bluetooth,
     files,
     settings
-] = document.querySelectorAll('svg')
+] = document.querySelectorAll('svg');
+
 
 let version = document.querySelector('.version')
 let date = document.querySelector('.date')
