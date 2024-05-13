@@ -9,8 +9,8 @@ on:
 jobs:
     status:
       runs-on: ubuntu-latest
-      name: Update Discord Status
-      if: '!contains(github.event.head_commit.message, "--nobuild") '
+      name: Build Extention
+      if: "!contains(github.event.head_commit.message, '--nobuild')"
       steps:
       - name: Checkout files
         uses: actions/checkout@v3
